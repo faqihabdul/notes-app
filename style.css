@@ -1,0 +1,108 @@
+:root {
+    --header-font: "Plus Jakarta Sans", sans-serif;
+    --body-font: "Inter", sans-serif;
+    --primary-color: #4a9b8e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dbece8;
+    
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 0px 20px;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    height: 80px;
+}
+
+.judul-web {
+    font-family: var(--header-font);
+    font-size: 27px;
+    text-transform: capitalize;
+}
+
+.search-bar {
+    width: 370px;
+    padding: 5px 14px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    background-color: inherit;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: 14px;
+    /* border: 1px solid gray; */
+    margin: 0px 5px;
+}
+
+
+.search-bar:hover {
+    box-shadow: 0px 5px 15px -7px black;
+    transition: all 0.4s;
+}
+
+/* INPUT CATATAN */
+.input-notes-container{
+    max-width: 650px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.input-notes-container textarea{
+    display: block;
+    font-family: var(--body-font);
+    width: 100%;
+    height: 75px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-bottom: 0.2px solid gray;
+    resize: none;
+}
+
+.input-notes-container .judul-notes {
+    display: block;
+    outline: none;
+    border: none;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-family: var(--header-font);
+}
+
+.judul-notes::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+.input-notes-container button {
+    margin-top: 30px;
+    border: none;
+    background-color: var(--primary-color);
+    padding: 13px 0px;
+    font-family: var(--body-font);
+    border-radius: 8px;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+}
