@@ -2,6 +2,7 @@
     --header-font: "Plus Jakarta Sans", sans-serif;
     --body-font: "Inter", sans-serif;
     --primary-color: #4a9b8e;
+    --hover-color: #058973;
 }
 
 * {
@@ -81,16 +82,17 @@ header {
     resize: none;
 }
 
-.input-notes-container .judul-notes {
+.input-notes-container .input-judul-notes {
     display: block;
     outline: none;
     border: none;
     margin-bottom: 12px;
     font-size: 18px;
     font-family: var(--header-font);
+    font-weight: bold;
 }
 
-.judul-notes::placeholder {
+.input-judul-notes::placeholder {
     font-weight: bold;
     color: black;
 }
@@ -105,4 +107,67 @@ header {
     width: 100%;
     font-size: 15px;
     color: white;
+}
+
+.input-notes-container button:hover {
+    box-shadow: 0px 5px 15px -7px black;
+    transform: translateY(-3px);
+    transition: all 0.4s;
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+/* main */ 
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+/* KUMPULAN NOTES */
+.kumpulan-notes {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.notes-container {
+    background-color: #76e0f5;
+    width: 31%;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 10px;
+    box-shadow: 0px 3px 12px -3px black;
+}
+
+.container-judul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.container-judul .hapus {
+    font-size: 26px;
+    margin-left: 10px;
+    color: rgb(88, 88, 88);
+    font-family: var(--header-font);
+}
+
+.container-judul .hapus:hover {
+    color: red;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.container-judul .judul-notes {
+    font-family: var(--header-font);
+    font-size: 22px;
+}
+
+.isi-notes {
+    font-family: var(--body-font);
+    font-size: 16px;
+    color: rgb(47, 47, 47);
 }

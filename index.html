@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
+    <title>My Notes</title>
 
     <!-- link style -->
     <link rel="stylesheet" href="style.css">
@@ -29,9 +29,20 @@
 
     <main>
         <section class="input-notes-container">
-            <input type="text" class="judul-notes"  placeholder="Judul Catatan">
+            <input type="text" class="input-judul-notes"  placeholder="Judul Catatan">
             <textarea   placeholder="Tulis catatanmu di sini..."></textarea>
-            <button type="button">Simpan Catatan</button>
+            <button type="button" id="btn-input">Simpan Catatan</button>
+        </section>
+
+        <section class="kumpulan-notes">
+            <div class="notes-container">
+                <div class="container-judul">
+                    <h2 class="judul-notes">Lorem, ipsum. </h2>
+                    <span class="hapus">x</span>
+                </div>
+                
+                <p class="isi-notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ab? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, sapiente? Lorem.</p>
+            </div>
         </section>
     </main>
     <!-- link script -->
